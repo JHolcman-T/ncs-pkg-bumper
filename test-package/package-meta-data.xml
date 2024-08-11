@@ -1,6 +1,6 @@
 <ncs-package xmlns="http://tail-f.com/ns/ncs-packages">
   <name>test-package</name>
-  <package-version>1.2.0</package-version>
+  <package-version>1.0.0</package-version>
   <description>ncs-pkg-bumper test package</description>
   <ncs-min-version>6.1</ncs-min-version>
 
