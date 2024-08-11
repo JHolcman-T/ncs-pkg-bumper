@@ -1,0 +1,22 @@
+<ncs-package xmlns="http://tail-f.com/ns/ncs-packages">
+  <name>test-package</name>
+  <package-version>1.2.0</package-version>
+  <description>ncs-pkg-bumper test package</description>
+  <ncs-min-version>6.1</ncs-min-version>
+
+  <!-- Some comment -->
+  <!-- same package, multiple services, data providers etc -->
+
+  <component>
+    <name>MyComponent1</name>
+    <callback>
+      <java-class-name>com.example.test.testClass</java-class-name>
+    </callback>
+  </component>
+  <component>
+    <name>test</name>
+    <application>
+      <python-class-name>test.Main</python-class-name>
+    </application>
+  </component>
+</ncs-package>
