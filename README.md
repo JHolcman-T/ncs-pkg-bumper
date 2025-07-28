@@ -10,6 +10,20 @@ go build
 
 ## Usage
 
+### Help
+
+```bash
+Usage of ncs-pkg-bumper:
+  -m string
+        Mode of bump one of: ['major', 'minor', 'patch']
+  -p string
+        Path to file. Defaults to './package-meta-data.xml'
+  -s string
+        Set version for the package. Syntax: <NUMBER>.<NUMBER>.<NUMBER> Example: 1.0.0
+```
+
+### Bumping
+
 ```bash
 ncs-pkg-bumper -p test-package/package-meta-data.xml -m minor
 ```
@@ -26,6 +40,26 @@ ncs-pkg-bumper -p test-package -m minor
 ```bash
 # looks for 'package-meta-data.xml' in current directory
 ncs-pkg-bumper -m minor
+```
+
+### Setting version manually
+
+```bash
+ncs-pkg-bumper -p test-package/package-meta-data.xml -s 1.1.0
+```
+
+**OR**
+
+```bash
+# looks for 'package-meta-data.xml' in specified directory
+ncs-pkg-bumper -p test-package -s 1.1.0
+```
+
+**OR**
+
+```bash
+# looks for 'package-meta-data.xml' in current directory
+ncs-pkg-bumper -s 1.1.0
 ```
 
 ## Example
